@@ -164,6 +164,8 @@ const scrollToAnchor = () => {
       sections[i].scrollIntoView({ behavior: "smooth" });
       removeActiveClassFromSection();
       sections[i].classList.add("active_section");
+      sections[i].childNodes[1].firstElementChild.classList.add("active__section");
+      sections[i].childNodes[1].lastElementChild.style.maxHeight = sections[i].childNodes[1].lastElementChild.scrollHeight + "px";
       swichMenu(); // for small devices if menu item clicked hide menu
     }
   });
