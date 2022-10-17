@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Page title-->
     <title>Manipulating the DOM</title>
     <!-- Load Google Fonts -->
     <link
@@ -14,24 +15,21 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- HTML Follows BEM naming conventions 
-  IDs are only used for sections to connect menu achors to sections -->
+    <!--page header and navbar -->
     <header class="page__header">
       <nav class="navbar__menu">
         <!--will automaticly appear on small devices-->
-        <span id="collapse__menu">☰</span>
+        <span id="collapse__menu">&#9776;</span>
         <!-- Navigation starts as empty UL that will be populated with JS -->
         <ul id="navbar__list"></ul>
       </nav>
     </header>
+    <!--page content-->
     <main>
       <header class="main__hero">
         <h1>Landing Page</h1>
       </header>
-      <!-- Each Section has an ID (used for the anchor) and 
-    a data attribute that will populate the li node.
-    Adding more sections will automatically populate nav.
-    The first section is set to active class by default -->
+      <!--page sections has uniqe id used for anchor and data-nav attribute to generate navbar-->
       <section
         id="section1"
         data-nav="Section 1"
@@ -177,13 +175,15 @@
         </div>
       </section>
     </main>
+    <!--Page Footer-->
     <footer class="page__footer">
-      <p>&copy Udacity</p>
+      <p>&copy; Udacity</p>
     </footer>
 
     <!--html button for back to top-->
     <a id="back2top">▲</a>
 
+    <!--load javascript-->
     <script src="js/app.js"></script>
   </body>
 </html>

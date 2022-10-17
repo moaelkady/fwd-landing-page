@@ -1,40 +1,13 @@
 /**
- * to test code performance
- * const startingTime = performance.now();
- * my code
- * const endingTime = performance.now();
- * console.log('This code took ' + (endingTime - startingTime) + ' milliseconds.');
- */
-
-/**
- *
- * Manipulating the DOM exercise.
- * Exercise programmatically builds navigation,
- * scrolls to anchors from navigation,
- * and highlights section in viewport upon scrolling.
- *
- * Dependencies: None
- *
- * JS Version: ES2015/ES6
- *
- * JS Standard: ESlint
- *
- */
-
-// for ESLint
-/* eslint-env browser */
-/**
  * Define Global Variables
- *
  */
-//Array for all sections in the landing page
 
+//Array for all sections in the landing page
 const sections = document.querySelectorAll("section");
 
 /**
  * End Global Variables
  * Start Helper Functions
- *
  */
 // function to add class active to the first link as default
 const defaultActive = () => {
@@ -75,7 +48,7 @@ const removeActiveClassFromSection = () => {
   }
 };
 
-//function to detect the current link that's now been viewed it's content
+//function to detect the current link that it's content is been viewed at the moment
 const searchMenuLink = function (link) {
   const menuLinks = document.querySelectorAll(".menu__link");
   let choosenLink;
@@ -98,7 +71,7 @@ window.addEventListener("scroll", () => {
     b2top.style.display = "none";
   }
 });
-// function to smooth scrolling
+// function for smooth scrolling
 const smoothScrollToTop = () => {
   const scrollHeight = document.body.scrollTop;
   if (scrollHeight) {
@@ -109,7 +82,6 @@ const smoothScrollToTop = () => {
 /**
  * End Helper Functions
  * Begin Main Functions
- *
  */
 
 // build the nav
@@ -128,7 +100,7 @@ const buildNav = () => {
 };
 
 //when on mobile devices use collapse menu
-navbarList.style.left = "-100%"; // set value of menu style to hide it
+navbarList.style.left = "-100%"; // set value of menu style to hide it and for navbarList variable we already decleared it in the last buildNav function
 const swichMenu = () => {
   if (navbarList.style.left == "-100%") {
     navbarList.style.left = 0;
@@ -137,7 +109,7 @@ const swichMenu = () => {
   }
 };
 
-// Add class 'active' to section when near top of viewport
+// Add class 'active' to section when near top of its viewport
 const addActiveClass = () => {
   for (let section of sections) {
     if (isInViewPort(section)) {
