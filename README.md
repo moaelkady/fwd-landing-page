@@ -4,9 +4,10 @@ This is a landing page for the Udacity FWD Scholarship. The page is built using 
 
 ## Table of contents
 
-- [Usage](##usage)
-- [Development](##development)
-- [Contributions](##Contributions)
+- [Usage](#usage)
+- [Development](#development)
+- [Contributions](#Contributions)
+
 ## Usage
 
 The Udacity FWD Scholarship landing page is designed to provide information about the scholarship program and its benefits. The page includes several sections that can be accessed by scrolling or clicking on the navigation menu. The navigation menu is fully responsive, making it easy to navigate on mobile devices.
